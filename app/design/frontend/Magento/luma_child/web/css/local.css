@@ -1,0 +1,25 @@
+
+body {
+    background: whitesmoke;
+}
+.image
+{
+    display:flex
+}
+img
+{
+    width:50%;
+    height:auto;
+}
+.category
+{
+    display:flex;
+    justify-content:space-between;
+}
+#img1,#img2,#img3
+{
+    width:45%;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+}
