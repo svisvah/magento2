@@ -35,7 +35,7 @@ class ContactForm extends Template
 
     public function getCountryAction()
     {
-        return $this->getUrl('sample/mypage/country', ['_secure' => true]);
+        return $this->getUrl('mypage/mypage/country', ['_secure' => true]);
     }
 
     public function getFormAction()
