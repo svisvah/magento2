@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/** Grid menu xml
+ * @category  Vendor
+ * @package   Vendor_Grid
+ * @author    Vendor
+ * @copyright Copyright (c) 2010-2017 Vendor Software Private Limited (https://Vendor.com)
+ * @license   https://store.Vendor.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Vendor_Grid::manager" title="My Page Manager" module="Vendor_Grid" sortOrder="10" resource="Vendor_Grid::manager" />
+        <add id="Vendor_Grid::add_row" title="My Page Manager" module="Vendor_Grid" sortOrder="20" parent="Vendor_Grid::manager" action="grid/grid" resource="Vendor_Grid::add_row"/>
+    </menu>
+</config>

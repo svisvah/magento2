@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="empty" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<head>
+<css src="Vendor_Sample::css/custom.css" />
+<script src="Vendor_Sample::js/custom.js" />  
+<script src="Vendor_Sample::js/countrystate.js" />  
+</head>
+<body>
+    <referenceContainer name="content">
+        <!-- <block class="Vendor\Sample\Block\Custom" name="mypage_mypage_newpage" template="Vendor_Sample::index.phtml" />    -->
+        <block class="Vendor\Sample\Block\ContactForm" name="mypage_mypage_newpage" template="Vendor_Sample::index.phtml" />   
+    </referenceContainer>
+    </body>
+</page>

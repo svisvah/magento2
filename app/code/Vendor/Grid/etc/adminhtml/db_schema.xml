@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+   <table name="eodform" resource="default" engine="innodb" comment="EOD_Form">
+      <column xsi:type="int" name="id" padding="10" unsigned="false" nullable="false" identity="true" comment="ID" />
+      <column xsi:type="varchar" name="firstname" nullable="false" length="50" comment="First_Name" />
+      <column xsi:type="varchar" name="lastname" nullable="false" length="50" comment="Last_Name" />
+      <column xsi:type="varchar" name="email" nullable="false" length="50" comment="Email" />
+      <column xsi:type="varchar" name="password" nullable="false" length="30" comment="Password" />
+      <column xsi:type="int" name="age" nullable="false" length="3" comment="Age" />
+      <column xsi:type="varchar" name="gender" nullable="false" length="6" comment="Gender" />
+      <column xsi:type="varchar" name="country_id" nullable="false" length="255" comment="Country" />
+      <column xsi:type="varchar" name="region" nullable="false" length="255" comment="State" />
+      <column xsi:type="date" name="dob" nullable="false" comment="DOB" />
+      <column xsi:type="int" name="contact" nullable="false" length="10" comment="Contact" />
+      <column xsi:type="varchar" name="fresher" nullable="false" length="3" comment="Fresher" />
+      <column xsi:type="varchar" name="companyname" nullable="true" length="50" comment="Company_Name" />
+      <column xsi:type="varchar" name="role" nullable="true" length="20" comment="Role" />
+      <column xsi:type="date" name="dateofjoining" nullable="true" comment="Date_of_joining" />
+      <column xsi:type="date" name="dateofleaving" nullable="true" comment="Date_of_leaving" />
+      <column xsi:type="int" name="currentsalary" nullable="true" length="20" comment="Current_Salary" />
+      <column xsi:type="int" name="expectedsalary" nullable="false" length="20" comment="Expected_Salary"/>
+      <column xsi:type="varchar" name="rellocate" nullable="false" length="3" comment="Willing_to_rellocate" />
+      <column xsi:type="varchar" name="shiftbasis" nullable="false" length="3" comment="Shifting_basis" />
+      <column xsi:type="text" name="skills" nullable="false" comment="Skills" />
+      <column xsi:type="varchar" name="resume" nullable="false" comment="Resume"/>
+      <constraint xsi:type="primary" referenceId="PRIMARY">
+         <column name="id" />
+      </constraint>
+   </table>
+</schema>

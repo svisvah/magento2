@@ -1,0 +1,169 @@
+<!-- <form action='mycontroller' method="post" id="my-form" enctype="multipart/form-data"> -->
+    <!-- <div class="row">
+        <div class="column">
+            <label for="name">First Name:</label>
+            <input type="text" id="firstname" name="firstname" class="input-text"  class="bodyform"><br>
+        </div>
+        <div class="column">
+            <label for="name">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" class="input-text"><br>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" class="input-text" ><br>
+            </div>
+            <div class="column">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="input-text" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" class="input-text"><br>
+            </div>
+            <div class="column">
+                <label for="Gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option name="male" value="male">Male</option>
+                    <option name="female" value="female">Female</option>
+                    <option name="others" value="others">Others</option>
+                </select>
+            </div>
+        </div> -->
+        <!-- <form action='country' method="post" id="my-form" enctype="multipart/form-data"> -->
+        <!-- <form action='country' method="post">
+        <?php
+        $countryList = $block->getCountries();
+        $regionList = $block->getRegion();  ?>
+       
+            <div class="row">
+                <div class="column">
+                    <div class="field country required">
+                        <label class="label" for="country"><span><?php /* @escapeNotVerified */ echo __('Country') ?></span></label>
+                        <div class="control">
+                            <?php echo $countryList ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field region required">
+                        <label class="label" for="state"><span><?php /* @escapeNotVerified */ echo __('State') ?></span></label>
+                        <div class="control">
+                            <?php echo $regionList ?>
+                        </div>
+                    </div>
+
+                    <div class="field states required" style="display:none">
+                        <label class="label" for="states"><span><?php /* @escapeNotVerified */ echo __('State') ?></span></label>
+                        <div class="control">
+                            <input name="state" id="states" title="<?php /* @escapeNotVerified */ echo __('State') ?>" class="input-text" type="text" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <center><button type="submit" id="submit-button">Submit</button></center>
+</form>
+    -->
+<!-- 
+        <div class="row">
+            <div class="column">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="column">
+                <label for="contact">Contact</label>
+                <input type="number" name="contact" id="contact" >
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <label for="fresher">Are you fresher</label>
+            <input type="radio" name="fresher" value="yes" >
+            <span>Yes</span>
+            <input type="radio" name="fresher" value="no" >
+            <span>No</span>
+        </div>
+
+        <div class="experience">
+            <div class="row">
+                <div class="column">
+                    <label for="company_name">Company Name</label>
+                    <input type="text" id="companyname" name="companyname" class="input-text">
+                </div>
+                <div class="column">
+                    <label for="company_name">Role</label>
+                    <input type="text" id="role" name="role" class="input-text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="dateofjoining">Date of Joining</label>
+                    <input type="date" id="dateofjoining" name="dateofjoining" >
+                </div>
+                <div class="column">
+                    <label for="dateofleaving">Date of Leaving</label>
+                    <input type="date" id="dateofleaving" name="dateofleaving" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="cursalary">Current Salary</label>
+                    <input type="number" id="cursalary" name="currentsalary">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="expsalary">Expected Salary</label>
+                <input type="number" id="expsalary" name="expectedsalary">
+            </div>
+        </div>
+
+
+        <br>
+        <div class="row">
+            <div class="column">
+                <label for="rellocate">Are you Willing to rellocate?</label>
+                <input type="radio" name="rellocate" value="yes" >
+                <span>Yes</span>
+                <input type="radio" name="rellocate" value="no" >
+                <span>No</span>
+            </div>
+            <div class="column">
+                <label for="shiftbasis">Are you Willing to work in shift basis?</label>
+                <input type="radio" name="shiftbasis" value="yes" >
+                <span>Yes</span>
+                <input type="radio" name="shiftbasis" value="no" >
+                <span>No</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <label for="cars">Skills:</label>
+            <select name="skills" id="skills" multiple >
+                <option value="C/C++">C/C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="MySQL">MySQL</option>
+                <option value="HTML,CSS,JS">HTML,CSS,JS</option>
+                <option value="PHP">PHP</option>
+                <option value="BI">BI</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="Android">Android</option>
+            </select>
+        </div>
+        <div class="column">
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume">
+        </div>
+    </div>
+    <input name="form_key" type="hidden" value="<?php echo $block->getFormKey(); ?>
+    <br>
+    <div> -->
+        <center><button type="submit" id="submit-button">Submit</button></center> -->
+    </div>
+</form> -->

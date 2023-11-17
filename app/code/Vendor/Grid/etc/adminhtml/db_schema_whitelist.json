@@ -1,0 +1,32 @@
+{
+    "eodform": {
+        "column": {
+            "id": true,
+            "name": true,
+            "email": true,
+            "age": true,
+            "firstname": true,
+            "lastname": true,
+            "password": true,
+            "gender": true,
+            "country": true,
+            "state": true,
+            "dob": true,
+            "contact": true,
+            "fresher": true,
+            "companyname": true,
+            "role": true,
+            "dateofjoining": true,
+            "dateofleaving": true,
+            "currentsalary": true,
+            "expectedsalary": true,
+            "rellocate": true,
+            "shiftbasis": true,
+            "skills": true,
+            "resume": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

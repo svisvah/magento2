@@ -1,0 +1,25 @@
+body {
+  background: #fbe6ca;
+  width:100%;
+}
+.column {
+float:left;
+width: 46%;
+margin-right:4%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "  ";
+clear: both;
+}
+.col{
+float:left;
+width:20%;
+}
+label
+{
+font-family: Courier;
+font-style: bold;
+}
+

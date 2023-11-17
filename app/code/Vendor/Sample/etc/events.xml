@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="customer_login">
+        <observer name="sample_customer_login" instance="Vendor\Sample\Observer\CustomerLogin" />
+    </event>
+      <event name="adminhtml_customer_prepare_save">
+        <observer name="sample_customer_change_customer_group" instance="Vendor\Sample\Observer\ChangeGroup" />
+    </event>
+</config>
