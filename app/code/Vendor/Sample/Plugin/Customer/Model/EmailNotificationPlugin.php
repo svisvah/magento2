@@ -5,7 +5,7 @@ namespace Vendor\Sample\Plugin\Customer\Model;
 use Magento\Customer\Model\Customer;
 use Magento\Customer\Api\CustomerRepositoryInterface;
 
-class EmailNotification
+class EmailNotificationPlugin
 {
     /**
      * @var Customer
