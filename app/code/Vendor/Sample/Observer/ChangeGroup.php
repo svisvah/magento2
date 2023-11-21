@@ -41,24 +41,34 @@ class ChangeGroup implements ObserverInterface
         // echo $approve // GET customer object
         $wholesale=$customer->getCustomAttribute('want_to_become_wholesale_customer')->getValue();
         $approve=$customer->getCustomAttribute('want_to_become_wholesale_customer')->getValue();
+        $notify=$customer->getCustomAttribute('notify_customer')->getValue();
 
         // echo "Wholesale". $wholesale;
         // echo "Approve".$approve;
         //  exit();
         $groupid=$customer->getGroupId();
-        if ($wholesale==1 && $approve==1&&$groupid==1) {
+        if ($wholesale==1 && $approve==1 && $groupid==1) {
             $customer->setGroupId(self::CUSTOMER_GROUP_ID);
             //$customer->save();
             $this->logger->info("Being as wholesale ustomer group: ");
-
-
-
-            
         }
         else
         {
             $this->logger->info("Being as general customer group: ");
 
         }
+        if($wholesale==1 && $approve==1 && $groupid==2 )
+        {
+                if ($notify == 0) {
+                    // Set notify value to 1
+                    $notify = $customer->setCustomAttribute(1);
+                }
+                else {
+                    // Notify value is already 1, throw success message
+                    $this->messageManager->addSuccessMessage(__('Email is already sent to the customer.'));
+                }
+
+        }
+        
     }
 }

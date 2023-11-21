@@ -331,11 +331,13 @@ return [
         'Mage_Hello' => 1,
         'Mageplaza_Core' => 1,
         'Mageplaza_BannerSlider' => 1,
+        'Mageplaza_Smtp' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Temando_ShippingRemover' => 1,
         'Vendor_Adminapprove' => 1,
         'Vendor_Cuat' => 1,
+        'Vendor_CustNotify' => 1,
         'Vendor_Edis' => 1,
         'Vendor_Grid' => 1,
         'Vendor_Sample' => 1

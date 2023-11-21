@@ -8,4 +8,8 @@
             <argument name="redirect" xsi:type="object">Magento\Framework\App\Response\RedirectInterface</argument>
         </arguments>
     </type>
+        <type name="Magento\Customer\Model\EmailNotification">
+        <plugin name="disable_welcome_email" type="Vendor\Sample\Plugin\Customer\Model\EmailNotificationPlugin"/>
+    </type>
+
 </config>
