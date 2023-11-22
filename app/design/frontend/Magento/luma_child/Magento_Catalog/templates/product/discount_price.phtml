@@ -1,0 +1,9 @@
+<?php
+$discountPercentage = $block->getDiscountPercentage();
+?>
+
+<?php if ($discountPercentage > 0): ?>
+    <div class="discount-block">
+        <?php echo __('Discount: %1%', $discountPercentage); ?>
+    </div>
+<?php endif; ?>

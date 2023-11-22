@@ -208,5 +208,8 @@
                     name="product_viewed_counter"
                     template="Magento_Catalog::product/view/counter.phtml"/>
         </referenceContainer>
+          <referenceBlock name="product.info.main">
+            <block class="Vendor\MagentoCatalog\Block\DiscountPrice" name="product.discount.price" template="Vendor_MagentoCatalog::product/discount_price.phtml"/>
+        </referenceBlock>
     </body>
 </page>

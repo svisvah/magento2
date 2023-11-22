@@ -340,6 +340,7 @@ return [
         'Vendor_CustNotify' => 1,
         'Vendor_Edis' => 1,
         'Vendor_Grid' => 1,
+        'Vendor_MagentoCatalog' => 1,
         'Vendor_Sample' => 1
     ]
 ];
