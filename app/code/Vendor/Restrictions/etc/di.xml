@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Vendor\Sample\Observer\CustomerLogin">
+        <arguments>
+            <argument name="logger" xsi:type="object">Psr\Log\LoggerInterface</argument>
+            <argument name="customerSession" xsi:type="object">Magento\Customer\Model\Session</argument>
+            <argument name="messageManager" xsi:type="object">Magento\Framework\Message\ManagerInterface</argument>
+            <argument name="redirect" xsi:type="object">Magento\Framework\App\Response\RedirectInterface</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
+        <plugin name="vendor_restrictions_toolbar_plugin" type="Vendor\Restrictions\Plugin\ToolbarPlugin" sortOrder="1" />
+    </type>
+    <type name="Magento\CatalogSearch\Model\Search\IndexBuilder">
+        <plugin name="vendor_restrictions_search_box_plugin" type="Vendor\Restrictions\Plugin\SearchBoxPlugin" sortOrder="1" />
+    </type>
+    <type name="Magento\Catalog\Block\Product\NewProduct">
+        <plugin name="vendor_restrictions_new_products_plugin" type="Vendor\Restrictions\Plugin\NewProductPlugin" sortOrder="1" />
+    </type>
+</config>
